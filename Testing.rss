@@ -1,0 +1,15 @@
+class Class1
+func main ()
+int a 
+bool b
+a = 20
+b= true
+if(a < 10)
+print ("IF statement is invoked")
+else if (b)
+print ("ELSE IF statement is invoked")
+else
+print ("ELSE statement is invoked")
+end
+end
+end
