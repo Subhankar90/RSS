@@ -1,0 +1,17 @@
+class Class1
+func main ()
+int a
+a = 5
+print (factorial (a))
+end
+
+func factorial (int n) returns int
+int result
+if (n == 1)
+return 1
+end
+result = factorial (n-1) * n
+return result
+end
+
+end

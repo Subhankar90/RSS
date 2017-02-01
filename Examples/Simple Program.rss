@@ -1,0 +1,8 @@
+class Class1
+bool b
+func main ()
+int a[10]
+a[0] = 5
+print (a [0])
+end
+end

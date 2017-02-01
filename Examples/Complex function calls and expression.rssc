@@ -1,0 +1,36 @@
+Programstart
+Class Class1
+Dec _GReturn
+Dec _Gia
+Func main
+SET _Gia 5
+SET @Reg1 _Gia
+Push @Pointerstack CurrentLine
+Goto Func square
+SET @Reg1 _GReturn 
+Push @Pointerstack CurrentLine
+Goto Func square
+Dec _Litemp1
+MUL 3 5 _Litemp1
+Dec _Litemp2
+ADD _GReturn _Litemp1 _Litemp2
+Dec _Lstemp3
+ADD "Output : " _Litemp2 _Lstemp3
+Print _Lstemp3
+Dec _Lstemp4
+ADD "Global Variable 'a' value : " _Gia _Lstemp4
+Print _Lstemp4
+Functionend
+Programend
+Func square
+Dec _Lia
+SET _Lia @Reg1
+Dec _Litemp5
+MUL _Lia _Lia _Litemp5
+SET _Lia _Litemp5
+SET _GReturn _Lia
+Functionend
+POP @Pointerstack @Reg1
+ADD @Reg1 2 @Reg1
+Goto @Reg1
+Classend

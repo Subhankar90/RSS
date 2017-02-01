@@ -1,0 +1,39 @@
+Programstart
+Class Class1
+Dec _GReturn
+Func main
+Dec _Lia
+SET _Lia 5
+SET @Reg1 _Lia
+Push @Pointerstack CurrentLine
+Goto Func factorial
+Print _GReturn
+Functionend
+Programend
+Func factorial
+Dec _Lin
+SET _Lin @Reg1
+Dec _Liresult
+Dec _Lbtemp1
+EQ _Lin 1 _Lbtemp1
+If _Lbtemp1
+SET _GReturn 1
+Functionend
+POP @Pointerstack @Reg1
+ADD @Reg1 2 @Reg1
+Goto @Reg1
+Endif
+Dec _Litemp2
+SUB _Lin 1 _Litemp2
+SET @Reg1 _Litemp2
+Push @Pointerstack CurrentLine
+Goto Func factorial
+Dec _Litemp3
+MUL _GReturn _Lin _Litemp3
+SET _Liresult _Litemp3
+SET _GReturn _Liresult
+Functionend
+POP @Pointerstack @Reg1
+ADD @Reg1 2 @Reg1
+Goto @Reg1
+Classend

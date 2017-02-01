@@ -1,0 +1,47 @@
+Programstart
+Class Class1
+Dec _GReturn
+Dec _Gia
+Func main
+Dec _Lib[] 5
+SET _Gia 20
+Dec _Lii
+Forloop
+SET _Lii 0
+Dec _LbTemp1
+LTEQ _Lii 3 _LbTemp1
+If _LbTemp1
+SET @Reg1 CurrentLine
+SUB @Reg1 2 @Reg1
+Push @Pointerstack @Reg1
+SET _Lib[]._Lii _Lii
+ADD _Lii 1 _Lii
+POP If
+POP @Pointerstack @Reg1
+Goto @Reg1
+Endif
+Else
+Endelse
+Endloop
+Forloop
+SET _Lii 1
+Dec _LbTemp2
+LTEQ _Lii 3 _LbTemp2
+If _LbTemp2
+SET @Reg1 CurrentLine
+SUB @Reg1 2 @Reg1
+Push @Pointerstack @Reg1
+Dec _Litemp3
+ADD _Gia _Lib[]._Lii _Litemp3
+Print _Litemp3
+ADD _Lii 1 _Lii
+POP If
+POP @Pointerstack @Reg1
+Goto @Reg1
+Endif
+Else
+Endelse
+Endloop
+Functionend
+Programend
+Classend

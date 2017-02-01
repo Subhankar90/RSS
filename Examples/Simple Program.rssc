@@ -1,0 +1,11 @@
+Programstart
+Class Class1
+Dec _GReturn
+Dec _Gbb
+Func main
+Dec _Lia[] 10
+SET _Lia[].0 5
+Print _Lia[].0
+Functionend
+Programend
+Classend

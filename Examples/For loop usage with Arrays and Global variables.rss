@@ -1,0 +1,14 @@
+class Class1
+int a
+func main ()
+int b[5]
+::a = 20
+int i
+for i = 0 till 3
+b[i] = i
+end
+for i = 1 till 3
+print (::a + b[i])
+end
+end
+end

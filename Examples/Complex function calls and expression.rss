@@ -1,0 +1,15 @@
+class Class1
+int a
+
+func main ()
+::a = 5
+print("Output : " + (square(square(::a)) + 3*5))
+
+print("Global Variable 'a' value : " + ::a)
+end
+
+func square(int a) returns int
+a = a*a
+return a
+end
+end

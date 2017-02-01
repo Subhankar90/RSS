@@ -1,0 +1,22 @@
+Programstart
+Class Class1
+Dec _GReturn
+Func main
+Dec _Lia
+Dec _Lbb
+SET _Lia 20
+SET _Lbb true
+Dec _Lbtemp1
+LT _Lia 10 _Lbtemp1
+If _Lbtemp1
+Print "IF statement is invoked"
+Endif
+Else If _Lbb
+Print "ELSE IF statement is invoked"
+Endif
+Else
+Print "ELSE statement is invoked"
+Endelse
+Functionend
+Programend
+Classend
